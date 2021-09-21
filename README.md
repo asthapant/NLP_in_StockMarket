@@ -80,7 +80,7 @@ The result table indicates the factor coefficient, t stats(in brackets) and p va
 
 # Mechanism:
 
-A. Explaining Changes in Reporting Behavior
+## A. Explaining Changes in Reporting Behavior
 To better understand what factors affect the similarity scores, the authors panel regress the similarity measures (Simple Similarity) on the characteristics describing the document.
 The characteristics are namely:
 Sentiment of change: The number of negative words present normalized by the size of the change.
@@ -92,27 +92,27 @@ The results show that less similarity (i.e. more changes) across documents is as
 Now, we regress the returns by FamaMacbeth approach while controlling these document level characteristics. Some specific characteristics like Positive Sentiment of change are also used to to separate out the sentiments, defined as number of positive words in Change, normalized by the size of Change.
 From what is observed, there are effects of changes like decreasing sentiment or increasing the length of filing, but they aren't as strong as the impact of similarity measures in predicting the stock return. 
 
-B. Isolating Key Sections of Report
+## B. Isolating Key Sections of Report
 The authors plot two bar graphs to show the average similarity score(Jaccard Similarity) of each section of 10K(Panel A) and 10Q(Panel B) reports. It is observed that the MD&A section in both the panels displays significantly lower average similarity than the other categories. 
 
-C. Return Predictability of Key Sections of Reports
+## C. Return Predictability of Key Sections of Reports
 Now, we follow a similar approach as before and examine the return predictability associated with the similarity in each section of the report (earlier we analysed it for the entire report).
 We first compute the similarities(all fours) for each textual section of the report relative to the last year’s report, and thus divide the firms in 5 quintiles. Thereby, we procure the top minus bottom(Q5-Q1) calendar time portfolio returns for both equal and value weighting of the stocks. 
 Observations: We find that maximum effects on the returns is associated with the changes in the Risk Factor Section(upto 188 basis points every month).
 Thus, a bar graph is plotted depicting the same for each similarity measure and see the high predictability of the risk factor section. These results hence prove that subtle and undetectable changes in some sections of the reports might have huge implications in the firm's future returns.
 
-D.  Interacting with Investor Attention:
+## D.  Interacting with Investor Attention:
 The authors make use of the SEC EDGAR database which contains the records of all downloads of corporate filings, mathed to the IP address of downloader. They then run Fama-Macbeth regression of firm level stock returns on similarity measure and other variables such as IPAccessMultipleYear(unique IP addresses accessing both current and previous year’s reports for a firm normalised by total number of unique IP addresses accessing current year’s).
 We observe that when investor attention to these filings is greater, the return predictability results documented in this paper are weaker.
 To analyse investor inattention in detail, it is seen how markets fail to incorporate changes in qualitative as opposed to quantitative information. We isolate the firms that make comparative statements(roughly one-third) in their annual or quarterly reports from those who don’t. This comparative sample is subdivided into those that make explicit textual comparison to specific accounting variables. Then, we divide these two sets of firms into five quintiles based on similarity and report the calendar time portfolio value weighted five factor alphas for both.
 Conclusion:
 The primary return predictability results are driven by the firms who do not make explicit textual comparisons to prior filings. The firms that draw attention to previous years are less likely to have changes go unnoticed by markets. The firms with investors conducting multi year downloads from SEC servers, have greater short run announcement effect with weaker long term return predictability results. 
 
-E. Real Effects:
+## E. Real Effects:
 Now, we look at the extent to which the changes in document similarity predicts a firm’s future operating performance. The regressions of operating income, net income and sales are performed on the similarity score. These accounting variables are measured two quarters ahead and winsorized at 1% level. We observe that all four similarity measures significantly predict these three measures of operating performance.
 
-F. Other Sorts and Tests of the Mechanism
+## F. Other Sorts and Tests of the Mechanism:
 The authors then run additional tests and tabulate the results. The return results are higher for documents with low sentiment, high litigiousness and high uncertainty (high and low defines wrt the median). Also, decrease in similarity also predicts increase in number of future 8 Ks, increase in future short interest, negative future earnings surprises, and increases in the number of future bankruptcies(forecast bad news for firms). We then run a regression of Jaccard similarity measures on depreciation rate, sales growth, capital expenditure and age. From what is observed, depreciation rate and firm age are negatively related while sales growth and expenditure are positively related to similarity score, indicating that firms modify their reports as they mature. 
 
-G. Additional Robustness Checks
+## G. Additional Robustness Checks:
 To perform robustness checks, the authors rerun the FamaMacbeth regression with additional characteristics: accruals, investment, gross profitability and free cash flow. As per observation, none of these variables drive the return predictability. Next, after sorting each industry into quintiles, they run an industry adjusted version of the calendar time portfolio, to test if the results are concentrated in any particular industry and the results remain strong and significant after making the industry adjustment. Finally, they confirm that the results are not affected by including stop words or by filtering of the SEC filings.
