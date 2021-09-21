@@ -1,7 +1,7 @@
 # NLP in Stock Market
 
-##                                                          Lazy Prices
-# #  #                               LAUREN COHEN, CHRISTOPHER MALLOY, and QUOC NGUYEN
+#                                                         Lazy Prices
+##                              LAUREN COHEN, CHRISTOPHER MALLOY, and QUOC NGUYEN
 
 # Introduction:
 The paper ‘Lazy Prices’, makes use of the firm's annual financial reports- 10K and examines that the extent of changes in these documents impact the stock prices significantly. The paper asserts that there has been a lack of announcement return associated with these changes, and that is not due to these corporate documents becoming less informative or less useful. The results analyse that 10Ks contain rich information but investors are missing a large part of information, perhaps due to increased complexity and length, resulting in zero announcement effects associated with these changes.
